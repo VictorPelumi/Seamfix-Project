@@ -33,8 +33,8 @@ const Dashboard = () => {
   return (
     <>
       <Layout>
-        <div className="mt-4 flex space-x-4">
-          <div className=" w-1/3 space-y-3 rounded-md border border-gray-200 bg-white py-2 px-4 shadow">
+        <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
+          <div className="space-y-3 rounded-md border border-gray-200 bg-white py-2 px-4 shadow">
             <h2 className="text-sm">Application Status</h2>
             <div className="flex justify-between">
               <div className="flex flex-col items-center space-y-2">
@@ -57,7 +57,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 space-y-3 rounded-md border border-gray-200 bg-white py-2 px-4 shadow">
+          <div className="space-y-3 rounded-md border border-gray-200 bg-white py-2 px-4 shadow">
             <h2 className="text-sm">Servers</h2>
             <div className="flex justify-between">
               <div className="flex flex-col items-center space-y-2">
@@ -80,7 +80,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 space-y-3 rounded-md border border-gray-200 bg-white py-2 px-4 shadow">
+          <div className="space-y-3 rounded-md border border-gray-200 bg-white py-2 px-4 shadow">
             <h2 className="text-sm">Health check Count</h2>
             <div className="flex justify-center">
               <div className="flex flex-col items-center">
@@ -93,7 +93,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="mt-4 rounded-md bg-white py-4 px-8">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 flex-wrap space-y-2">
             <div className="relative">
               <div className="pointer-events-none absolute inset-y-0 left-0 flex w-10 items-center rounded-tl-md rounded-bl-md bg-gray-200 pl-3">
                 <svg
